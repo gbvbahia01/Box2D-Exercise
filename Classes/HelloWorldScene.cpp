@@ -95,6 +95,7 @@ void HelloWorld::reset(){
 	_pick = -1;
 	float startX = _screenSize.width * 0.5f;
 	float startY = _screenSize.height * 0.925f;
+	_ball->reset();
 	_ball->setSpritePosition(ccp(startX, startY));
 	pick(NULL);
 	char szNameI[10] = { 0 };

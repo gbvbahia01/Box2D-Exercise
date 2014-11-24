@@ -66,7 +66,6 @@ void Ball::reset() {
     if (_body) {
         _body->SetLinearVelocity(b2Vec2_zero);
         _body->SetAngularVelocity(0);
-       _body->SetAwake(true);
     }
     setSpritePosition(_startPosition);
     _inPlay = true;
